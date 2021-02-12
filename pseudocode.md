@@ -5,21 +5,21 @@
 This program is made to create the perfect cup of tea for a user, based on their personal preferences.
 
 #### Define Objects:
- 	- electricTeaKettle: Used to heat water to specific temperatures
-	- water: base liquid used to brew tea (among other things)
-	- teaCup: Used to hold a specific amount of water (8 fluid oz) and insulate from high temperatures
-	- teaBag: a small porous sachet containing an assortment of ground tea, suitable for making a single cup at 8 fluid oz.
-	- spoon: used for stirring condiments into tea after brewing
-	- timer: used to measure a specific amount of time
-	condiments: items to modify/enhance the flavor of the tea that the user can choose from
+ 	**electricTeaKettle:** Used to heat water to specific temperatures
+	**water:** base liquid used to brew tea (among other things)
+	**teaCup:** Used to hold a specific amount of water (8 fluid oz) and insulate from high temperatures
+	**teaBag:** a small porous sachet containing an assortment of ground tea, suitable for making a single cup at 8 fluid oz.
+	**spoon:** used for stirring condiments into tea after brewing
+	**timer:** used to measure a specific amount of time
+	**condiments:**  items to modify/enhance the flavor of the tea that the user can choose from
 
 
 #### Variables:
-	- cupSize: user defined selection of a small 8 oz cup or a large 16 oz cup
+	**cupSize:** user defined selection of a small 8 oz cup or a large 16 oz cup
 		[smallCup, largeCup]
- 	- teaType: a selection of available teas the user can pick from
+ 	**teaType:** a selection of available teas the user can pick from
 		[greenTea, earlGray (Black tea), peppermintTea (Herbal tea), irishBreakfastTea (Black tea), oolongTea]
-	- condimentSelection: a selection of available condiments that can be added to tea
+	**condimentSelection:** a selection of available condiments that can be added to tea
   		[sugar, milk, lemon]
 
 ### Start Program
