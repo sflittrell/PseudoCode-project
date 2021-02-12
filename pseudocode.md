@@ -62,25 +62,12 @@ This program is made to create the perfect cup of tea for a user, based on their
 
     INIT condimentPreference
         CREATE [condiments] === condimentSelection.userDefined // *Creates an array of the condiments that the user selects from the list of available options*
-        IF teaType === greenTea and [condiments] contain sugar
+        // *If the user selected a condiment from the options given and that condiment is compatible with a given tea then the condiment will be added to the tea*
+        IF [condiments] contain sugar AND teaType === greenTea OR oolongTea OR earlGrey OR peppermintTea OR irishBreakfastTea 
         add sugar to tea
-        IF teaType === greenTea and [condiments] contain lemon
+        IF [condiments] contain lemon AND teaType === greenTea OR earlGrey
         add lemon to tea
-        IF teaType === oolongTea and [condiments] contain sugar
-        add sugar to tea
-        IF teaType === oolongTea and [condiments] contain lemon
-        add lemon to tea
-        IF teaType === oolongTea and [condiments] contain milk
-        add milk to tea
-        IF teaType === earlGrey and [condiments] contain sugar
-        add sugar to tea
-        IF teaType === earlGrey and [condiments] contain lemon
-        add lemon to tea
-        IF teaType === peppermintTea and [condiments] contain sugar
-        add sugar to tea
-        IF teaType === irishBreakfastTea and [condiments] contain sugar
-        add sugar to tea
-        IF teaType === irishBreakfastTea and [condiments] contain milk
+        IF [condiments] contain milk AND teaType === irishBreakfastTea
         add milk to tea
 
     Stir tea with spoon until combined
