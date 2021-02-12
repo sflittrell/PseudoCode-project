@@ -16,11 +16,11 @@ This program is made to create the perfect cup of tea for a user, based on their
 
 ### Variables:
    - **cupSize:** user defined selection of a small 8 oz cup or a large 16 oz cup
-        [smallCup, largeCup]
+        <span style="color: green">[smallCup, largeCup]</span>
    - **teaType:** a selection of available teas the user can pick from
-        [greenTea, earlGray (Black tea), peppermintTea (Herbal tea), irishBreakfastTea (Black tea), oolongTea]
+        <span style="color: green">[greenTea, earlGray (Black tea), peppermintTea (Herbal tea), irishBreakfastTea (Black tea), oolongTea]</span>
    - **condimentSelection:** a selection of available condiments that can be added to tea
-        [sugar, milk, lemon]
+   <span style="color: green">[sugar, milk, lemon]</span>
 
 #### Start Program
     INIT userCreation
