@@ -5,9 +5,9 @@
 This program is made to create the perfect cup of tea for a user, based on their personal preferences.
 
 #### Define Objects:
- 	- **electricTeaKettle**: Used to heat water to specific temperatures
-	- **water**: base liquid used to brew tea (among other things)
-	- **teaCup**: Used to hold a specific amount of water (8 fluid oz) and insulate from high temperatures
+ 	- electricTeaKettle: Used to heat water to specific temperatures
+	- water: base liquid used to brew tea (among other things)
+	- teaCup: Used to hold a specific amount of water (8 fluid oz) and insulate from high temperatures
 	- teaBag: a small porous sachet containing an assortment of ground tea, suitable for making a single cup at 8 fluid oz.
 	- spoon: used for stirring condiments into tea after brewing
 	- timer: used to measure a specific amount of time
