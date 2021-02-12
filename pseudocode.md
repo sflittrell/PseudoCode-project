@@ -5,16 +5,16 @@
 This program is made to create the perfect cup of tea for a user, based on their personal preferences.
 
 ### Define Objects:
-   - **electricTeaKettle:** Used to heat water to specific temperatures
-   - **water:** base liquid used to brew tea (among other things)
-   - **teaCup:** Used to hold a specific amount of water (8 fluid oz) and insulate from high temperatures
+   - **electricTeaKettle:** used to heat water to specific temperatures
+   - **water:** base liquid used to brew tea
+   - **teaCup:** used to hold a specific amount of water and insulate from high temperatures
    - **teaBag:** a small porous sachet containing an assortment of ground tea, suitable for making a single cup at 8 fluid oz.
    - **spoon:** used for stirring condiments into tea after brewing
    - **timer:** used to measure a specific amount of time
-   - **condiments:**  items to modify/enhance the flavor of the tea that the user can choose from
+   - **condiments:**  items to modify/enhance the flavor of the tea
 
 
-### Variables:
+### Define Variables:
    - **cupSize:** user defined selection of a small 8 oz cup or a large 16 oz cup
         <span style="color: green">[smallCup, largeCup]</span>
    - **teaType:** a selection of available teas the user can pick from
@@ -45,20 +45,20 @@ This program is made to create the perfect cup of tea for a user, based on their
         IF teaType === geenTea set temperature to 160 degrees Fahrenheit
         ELSE IF teaType === oolongTea set temperature to 190 degrees Fahrenheit
         ELSE set temperature to 212 degrees Fahrenheit
+        PRESS start on electricTeaKettle
         WAIT for water to reach desired temperature
 
     INIT brewTea
         GET teaCup
-        PLACE teaBag(s) in teaCup // *Number of tea bags is determined by cupSize*
+        GET teaBag(s) and place in teaCup // *Number of tea bags is determined by cupSize*
         POUR heated water into teaCup
-        IF teaType  === geenTea let steep for 2 minutes using timer
-        ELSE IF teaType === oolongTea let steep for 3 minutes using timer
-        ELSE IF teaType === earlGray let steep for 4 minutes using timer
-        ELSE let steep for 5 minutes using timer
+        IF teaType === geenTea let steep for 2 minutes, using timer to measure time
+        ELSE IF teaType === oolongTea let steep for 3 minutes, using timer to measure time
+        ELSE IF teaType === earlGray let steep for 4 minutes, using timer to measure time
+        ELSE let steep for 5 minutes, using timer to measure time
         REMOVE teaBag and squeeze out excess liquid over cup
         REPEAT last step if there is a second teaBag
         DISCARD teaBag(s)
-
 
     INIT condimentPreference
         CREATE [condiments] === condimentSelection.userDefined // *Creates an array of the condiments that the user selects from the list of available options*
